@@ -8,7 +8,7 @@ import glob
 import os
 import time
 
-image_dir = "/home/nate/code/k_means/images"
+image_dir = os.path.join(os.path.dirname(__file__), "images")
 image_paths = sorted(glob.glob(os.path.join(image_dir, "*")))
 
 k = 5
